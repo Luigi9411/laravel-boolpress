@@ -1,11 +1,11 @@
 <template>
     <div>
-        <!-- navbar -->
+        <NavBar></NavBar>
         <main>
             <router-view></router-view>
         </main>
-        <!-- main -->
-        <!-- footer -->
+        <FooterComponent />
+
 
         <!-- <div class="container">
             <h1>Frontoffice in Vue</h1>
@@ -26,8 +26,14 @@
 </template>
 
 <script>
+import NavBar from './components/NavBar';
+import FooterComponent from './components/FooterComponent';
 export default {
   name: 'App',
+  components: {
+    NavBar,
+    FooterComponent,
+  },
   data() {
     return {
         arrPosts: [],
