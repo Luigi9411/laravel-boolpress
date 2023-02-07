@@ -21,7 +21,7 @@ class PostSeeder extends Seeder
         $tagCount = count($tags);
 
 
-        for ($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 150; $i++) {
             $title = $faker->words(rand(3, 7), true);
             // $loremImages = Storage::files('lorempicsum');
             // $img_path = Storage::put('uploads', $faker->randomElement($loremImages));
